@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>RJH-Indexer</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body><div class="searchResult">
+    <div class="nav"><h1>RJH-Indexer</h1>
+        <div class="add"><button class="btn btn-outline-secondary" type="button" onclick="toggleDetails('action')" >Actions</button>
+        <div class="action" id="action">
+          <button onclick="openPopup()">DeleteData</button>
+          
+        </div>
+        </div>
+    </div>
+    <div class="detail">
+        <input id="indexName">
+        <input type="text" class="form-control" id="query" >
+    </div>
+    <br>
+    <div class="documents" id="documents">
+  
+    </div>
+  </div>
+  <div class="cus_poupup" id="cus_poupup" onclick="document.getElementById('cus_poupup').style.display='none';">
+    <div onclick="stopPop(event)">
+      <input id="index_id" placeholder="Query">
+      <button class="btn btn-outline-primary"
+        onclick="deleteData()"
+      >
+        delete
+      </button>
+
+    </div>
+  </div>
+    <script>
+      function toggleDetails(detailId) {
+        var details = document.getElementById(detailId);
+  
+        if (details.style.display === "none") {
+          details.style.display = "block";
+        } else {
+          details.style.display = "none";
+        }
+      }
+     
+    </script>
+     <script src="search-script.js"></script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+com\smartcrew\rjh\RjhApplication.class
+com\smartcrew\rjh\Service\WebClient.class
+com\smartcrew\rjh\Service\RJHService.class
+com\smartcrew\rjh\controller\RJHController.class
